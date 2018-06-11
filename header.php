@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package videoBuff
+ * @package videobuff
  */
 
 ?>
@@ -16,10 +16,10 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<!-- the wp_header function is one of the most important functions in the header. It allows you to use js, css, and its also what plugins look for. its similiar to a hook -->
 	<?php wp_head(); ?>
 </head>
-
+<!-- the body_class function creates a list of auto generated classes to place them in the highest level of the pages hierarachy -->
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'videobuff' ); ?></a>
